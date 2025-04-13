@@ -5,6 +5,7 @@ import com.example.kpo_backend.domain.valueobject.*;
 import java.time.LocalDate;
 
 public class Animal {
+    private Long id; // уникальный идентификатор
     private AnimalSpecies animalSpecies;
     private String name;
     private LocalDate birthDate;
@@ -88,5 +89,57 @@ public class Animal {
 
     public Enclosure getCurrentEnclosure() {
         return currentEnclosure;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public LocalDate getBirthDate() {
+        return birthDate;
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
+
+    public FoodType getFavoriteFood() {
+        return favoriteFood;
+    }
+
+    public HealthStatus getStatus() {
+        return status;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setAnimalSpecies(AnimalSpecies animalSpecies) {
+        this.animalSpecies = animalSpecies;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setBirthDate(LocalDate birthDate) {
+        this.birthDate = birthDate;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
+    }
+
+    public void setFavoriteFood(FoodType favoriteFood) {
+        this.favoriteFood = favoriteFood;
+    }
+
+    public void setStatus(HealthStatus status) {
+        this.status = status;
+    }
+
+    public void setCurrentEnclosure(Enclosure currentEnclosure) {
+        this.currentEnclosure = currentEnclosure;
     }
 }
