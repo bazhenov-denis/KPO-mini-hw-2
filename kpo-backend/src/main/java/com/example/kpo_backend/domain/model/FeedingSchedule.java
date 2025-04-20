@@ -5,13 +5,11 @@ import com.example.kpo_backend.domain.valueobject.FoodType;
 import java.time.LocalTime;
 
 public class FeedingSchedule {
-
+    private Long id; // уникальный идентификатор
     // Животное, которому предназначено кормление
     private final Animal animal;
-
     // Время кормления
     private LocalTime feedingTime;
-
     // Тип пищи для данного кормления
     private FoodType foodType;
 
@@ -57,5 +55,25 @@ public class FeedingSchedule {
     public void markAsCompleted() {
         this.isCompleted = true;
         System.out.println("Кормление для " + animal.getName() + " выполнено.");
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setFeedingTime(LocalTime feedingTime) {
+        this.feedingTime = feedingTime;
+    }
+
+    public void setFoodType(FoodType foodType) {
+        this.foodType = foodType;
+    }
+
+    public void setCompleted(boolean completed) {
+        isCompleted = completed;
     }
 }

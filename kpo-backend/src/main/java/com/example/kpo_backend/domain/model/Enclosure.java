@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Enclosure {
-
+    private Long id; // уникальный идентификатор
     private final AnimalType allowedType;
     private final double size;
     private final int maxCapacity;
@@ -53,5 +53,13 @@ public class Enclosure {
 
     public List<Animal> getAnimals() {
         return animals;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }
