@@ -1,6 +1,6 @@
 package com.example.kpo_backend.infrastructure.repository;
 
-import com.example.kpo_backend.domain.model.FeedingSchedule;
+import com.example.kpo_backend.domain.entity.FeedingSchedule;
 import java.util.List;
 
 public interface FeedingScheduleRepository {

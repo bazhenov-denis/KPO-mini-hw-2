@@ -1,13 +1,15 @@
 package com.example.kpo_backend.infrastructure.repository.impl;
 
-import com.example.kpo_backend.domain.model.FeedingSchedule;
+import com.example.kpo_backend.domain.entity.FeedingSchedule;
 import com.example.kpo_backend.infrastructure.repository.FeedingScheduleRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Repository
 public class InMemoryFeedingScheduleRepository implements FeedingScheduleRepository {
     private final Map<Long, FeedingSchedule> scheduleMap = new HashMap<>();
     private Long idCounter = 1L;

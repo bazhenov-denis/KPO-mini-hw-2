@@ -13,4 +13,9 @@ public enum HealthStatus {
     public String getDescription() {
         return description;
     }
+
+    // Метод, который возвращает true, если статус SICK
+    public boolean isSick() {
+        return this == SICK;
+    }
 }

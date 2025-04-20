@@ -1,13 +1,15 @@
 package com.example.kpo_backend.infrastructure.repository.impl;
 
-import com.example.kpo_backend.domain.model.Animal;
+import com.example.kpo_backend.domain.entity.Animal;
 import com.example.kpo_backend.infrastructure.repository.AnimalRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Repository
 public class InMemoryAnimalRepository implements AnimalRepository {
     private final Map<Long, Animal> animalMap = new HashMap<>();
     private Long idCounter = 1L; // счетчик для уникальных id
