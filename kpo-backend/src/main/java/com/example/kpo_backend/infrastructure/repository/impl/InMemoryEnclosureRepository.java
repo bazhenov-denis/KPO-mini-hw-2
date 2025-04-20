@@ -1,13 +1,15 @@
 package com.example.kpo_backend.infrastructure.repository.impl;
 
-import com.example.kpo_backend.domain.model.Enclosure;
+import com.example.kpo_backend.domain.entity.Enclosure;
 import com.example.kpo_backend.infrastructure.repository.EnclosureRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Repository
 public class InMemoryEnclosureRepository implements EnclosureRepository {
     private final Map<Long, Enclosure> enclosureMap = new HashMap<>();
     private Long idCounter = 1L;

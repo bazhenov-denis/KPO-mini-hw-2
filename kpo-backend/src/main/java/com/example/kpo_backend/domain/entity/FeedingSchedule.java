@@ -1,4 +1,4 @@
-package com.example.kpo_backend.domain.model;
+package com.example.kpo_backend.domain.entity;
 
 import com.example.kpo_backend.domain.valueobject.FoodType;
 

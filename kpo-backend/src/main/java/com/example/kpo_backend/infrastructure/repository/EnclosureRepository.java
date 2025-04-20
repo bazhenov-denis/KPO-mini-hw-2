@@ -1,6 +1,6 @@
 package com.example.kpo_backend.infrastructure.repository;
 
-import com.example.kpo_backend.domain.model.Enclosure;
+import com.example.kpo_backend.domain.entity.Enclosure;
 import java.util.List;
 
 public interface EnclosureRepository {

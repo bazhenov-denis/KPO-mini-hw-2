@@ -1,6 +1,6 @@
 package com.example.kpo_backend.infrastructure.repository;
 
-import com.example.kpo_backend.domain.model.Animal;
+import com.example.kpo_backend.domain.entity.Animal;
 import java.util.List;
 
 public interface AnimalRepository {

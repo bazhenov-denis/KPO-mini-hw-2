@@ -1,6 +1,5 @@
-package com.example.kpo_backend.domain.model;
+package com.example.kpo_backend.domain.entity;
 
-import com.example.kpo_backend.domain.model.Animal;
 import com.example.kpo_backend.domain.valueobject.AnimalType;
 
 import java.util.ArrayList;
