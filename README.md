@@ -107,3 +107,21 @@ GET    /api/statistics
 
 Приложение будет доступно на `http://localhost:8080`
 
+примеры сущностей
+{
+  "name": "SIMBA",
+  "species": "LION",
+  "birthDate": "2020-01-01",
+  "gender": "MALE",
+  "favoriteFood": "meat",
+  "status": "HEALTHY"
+}
+
+{
+  "allowedType": "PREDATOR",
+  "size": 150.0,
+  "maxCapacity": 3
+}
+
+{{baseUrl}}/animals/1/move?newEnclosureId=1
+
