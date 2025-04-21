@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 import java.time.LocalDate;
 
 @RestController
-@RequestMapping("/api/animals")
+@RequestMapping("api/animals")
 public class AnimalController {
 
     private final AnimalTransferService animalTransferService;
@@ -51,12 +51,14 @@ public class AnimalController {
         return ResponseEntity.ok(animal);
     }
 
+
     @PostMapping("/{animalId}/move")
     public ResponseEntity<Void> moveAnimal(@PathVariable Long animalId,
                                            @RequestParam Long newEnclosureId) {
         animalTransferService.moveAnimal(animalId, newEnclosureId);
         return ResponseEntity.ok().build();
     }
+
 
     @GetMapping("/stats")
     public ResponseEntity<ZooStatsResponse> getStatistics() {

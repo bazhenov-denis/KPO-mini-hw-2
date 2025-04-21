@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.time.LocalTime;
 
 @RestController
-@RequestMapping("/api/feeding-schedule")
+@RequestMapping("/feeding-schedule")
 public class FeedingScheduleController {
 
     private final FeedingOrganizationService feedingOrganizationService;
